@@ -22,46 +22,69 @@ class AddCarBusiness(unittest.TestCase):
         
         # 等待js加载完毕
         if self.L.waitForJsLoadFinish():
-                # 等待 “新增” 按钮出现 并且 点击“添加”按钮
-                self.L.waitForElementByCss('#add').click()
+            # 等待 “新增” 按钮出现 并且 点击“添加”按钮
+            self.L.waitForElementByCss('#add').click()
 
-        # 等待iframe并且将当前窗口切换为该iframe
-        self.driver.switch_to.frame(self.L.waitForElementByCss('#layui-layer1 iframe'))
+            # 等待iframe并且将当前窗口切换为该iframe
+            self.driver.switch_to.frame(self.L.waitForElementByCss('#layui-layer1 iframe'))
 
-        # 设置表单的值
-        bool_display = self.L.waitForElementDisplayById('model_tb_business_base_info_BUSINESS_ID')
-        if bool_display:
-            Select(self.driver.find_element_by_id("business_type_detail")).select_by_visible_text(u"GPS抵押押证")
-            self.driver.find_element_by_id("model_tb_business_base_info_CUSTOMER_NAME").send_keys(u"李钊鸿自动化UI测试")
-            self.driver.find_element_by_id("model_tb_business_base_info_PHONE_NUMBER").send_keys("13713332652")
-            # 虽然可能性不高，但真的可能框架的JS还没加载好。导致点击无效。
-            # 但我又没有必要为了这东西写一个js加载判断。更何况这很难。所以还是用sleep 1秒吧
-            self.L.sleep(1, lambda x: x.find_element_by_id("submit").click())
+            # 设置表单的值
+            if self.L.waitForElementDisplayById('model_tb_business_base_info_BUSINESS_ID'):
+                self.L.waitForSelectTextById('business_type_detail', 'GPS抵押押证')
+                self.L.setValueById("model_tb_business_base_info_CUSTOMER_NAME", "李钊鸿自动化UI测试")
+                self.L.setValueById("model_tb_business_base_info_PHONE_NUMBER", "13713332652")
+                self.L.sleep(0.3, lambda x: x.find_element_by_id("submit").click())
 
-        # 获取成功反馈
-        success_text = self.L.waitForElementByCss('#jbox #jbox-content').text
+            # 获取成功反馈
+            success_text = self.L.waitForElementByCss('#jbox #jbox-content').text
 
-        # 截取订单号
-        businessId = 'TD' + success_text.split("TD")[1]
-        
-        # 执行下一步任务
-        self.foo(businessId)
+            # 截取订单号
+            businessId = 'TD' + success_text.split("TD")[1]
 
-    def foo(self, id):
+            # 执行下一步任务: 编辑车易贷订单信息
+            self.EditCarBusiness(businessId)
+
+    def EditCarBusiness(self, id):
         # 切换回主层面
         self.driver.switch_to.default_content()
-        # 关闭目前所在的所有layer. 其实可以直接执行指定的编辑页面js代码：EditBusiness('车易贷'," + id + ")
+        # 关闭目前所在的所有layer. 其实可以直接执行打开编辑页面js代码：EditBusiness('车易贷'," + id + ")
         self.driver.execute_script("window.layer.closeAll();")
         # 在搜索栏输入id
-        self.driver.find_element_by_id("carBusinessId").send_keys(id)
+        self.L.setValueById("carBusinessId", id)
         # 点击搜索
         self.driver.find_element_by_css_selector('#search .btn').click()
-        # 等待搜索按钮出现，然后点击它
+        # 等待【编辑】按钮出现，然后点击它
         self.L.waitForElementByCss('.table > tbody > tr td:nth-child(10) > a').click()    
         # 等待iframe并且将当前窗口切换为该iframe
         self.driver.switch_to.frame(self.L.waitForElementByCss('#layui-layer1 iframe'))
-        # 等待一个编辑按钮出来 
+        # 等待一个【编辑】按钮出来
         self.L.waitForElementByCss("table#tableCustomer > tbody > tr:nth-child(1) > td:nth-child(7) > a[title='编辑']").click()
+
+        # 设置表单
+        if self.L.waitForElementDisplayById('model_tb_car_personal_id_card_no'):
+            self.L.setValueById("model_tb_car_personal_id_card_no", "120311199606068814")
+            self.L.setValueById("model_tb_car_personal_nativeplace", "汉")
+            self.L.setValueById("model_tb_car_personal_current_address", "详细地址")
+            self.L.setValueById("model_tb_car_job_company_name", "单位全称")
+            self.L.setValueById("model_tb_car_job_company_address", "单位地址")
+            self.L.setValueById("model_tb_car_job_company_phone", "13214785214")
+            self.L.setValueById("model_tb_car_job_job_duty", "职位")
+            self.L.setValueById("model_tb_car_job_job_pay", "123654")
+            self.L.setValueById("model_tb_car_job_other_pay", "369852")
+            self.L.setValueById("multiple_customer_bank_info_bank_account", "62534442511225448")
+            self.L.setValueById("multiple_customer_bank_info_phone_number", "15876366685")
+            self.L.setValueById("multiple_customer_bank_info_bank_subname", "工商支行")
+
+            self.L.waitForSelectTextById('model_tb_car_personal_current_sheng', '广东省')
+            self.L.waitForSelectTextById('model_tb_car_personal_current_shi', '广州市')
+            self.L.waitForSelectTextById('model_tb_car_personal_current_xian', '东山区')
+            self.L.waitForSelectTextById('multiple_customer_bank_info_bank_name', '中国工商银行')
+            self.L.waitForSelectTextById('multiple_customer_bank_info_bank_provice', '广东省')
+            self.L.waitForSelectTextById('multiple_customer_bank_info_bank_city', '中山市')
+            self.L.waitForSelectTextById('multiple_customer_bank_info_output_type', '对私')
+
+            # 保存表单
+            self.driver.find_element_by_id('saveRow').click()
 
     # def tearDown(self):
         # self.driver.quit()

@@ -84,3 +84,18 @@ class Lib:
     def setValueByXpath(self, key, value):
         self.driver.find_element_by_xpath(key).clear()
         self.driver.find_element_by_xpath(key).send_keys(value)
+
+    # 判断alert是否存在，如果存在。返回alert实例，否则返回false
+    def alertIsPresent(self):
+        try:
+            _alert = self.driver.switch_to.alert
+            # 通过这一步判断是否会报错。这一步的作用仅仅如此
+            _alert.text
+            # 如果上一步都没有报错，那么就返回这个实例吧
+            return _alert
+        except:
+            return False
+
+    # 等待alert出现
+    def waitForAlert(self, time = 30):
+        return WebDriverWait(self.driver, time).until(lambda x: self.alertIsPresent())

@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
+from time import sleep
 from Lib import Lib
 import unittest
 
@@ -54,15 +55,17 @@ class AddCarBusiness(unittest.TestCase):
         # 点击搜索
         self.driver.find_element_by_css_selector('#search .btn').click()
         # 等待【编辑】按钮出现，然后点击它
-        self.L.waitForElementByCss('.table > tbody > tr td:nth-child(10) > a').click()    
+        self.L.waitForElementByCss('.table > tbody > tr td:nth-child(10) > a').click()
         # 等待iframe并且将当前窗口切换为该iframe
         self.driver.switch_to.frame(self.L.waitForElementByCss('#layui-layer1 iframe'))
-        # 等待一个【编辑】按钮出来(TODO: 这里有一个坑还没有解决)
-        self.L.waitForElementByCss("table#tableCustomer > tbody > tr:nth-child(1) > td:nth-child(7) > a[title='编辑']").click()
+        # 等待一个【编辑】按钮出来
+        edit_btn = self.L.waitForElementByCss("table#tableCustomer > tbody > tr:nth-child(1) > td:nth-child(7) > a[title='编辑']")
+        # 这里需要等待一下。这是根据观察发现的
+        self.L.sleep(1, lambda x: edit_btn.click())
 
         # 设置表单
         if self.L.waitForElementDisplayById('model_tb_car_personal_id_card_no'):
-           self.L.setValueById("model_tb_car_personal_id_card_no", "120311199606068814")
+           self.L.setValueById("model_tb_car_personal_id_card_no", "445222199307100337")
            self.L.setValueById("model_tb_car_personal_nativeplace", "汉")
            self.L.setValueById("model_tb_car_personal_current_address", "详细地址")
            self.L.setValueById("model_tb_car_job_company_name", "单位全称")
@@ -85,6 +88,10 @@ class AddCarBusiness(unittest.TestCase):
 
         # 保存表单
         self.driver.find_element_by_id('saveRow').click()
+        # 点击确定保存
+        self.L.waitForElementByCss(".layui-layer-btn0").click()
+        # 等待alert并且点击确认
+        self.L.waitForAlert().accept()
 
     # def tearDown(self):
         # self.driver.quit()

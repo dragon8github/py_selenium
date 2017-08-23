@@ -5505,3 +5505,116 @@ JavaScript error: resource:///modules/ExtensionsUI.jsm, line 50: TypeError: Rece
 1503473505799	Marionette	DEBUG	Received DOM event "beforeunload" for "http://oatest.bujidele.com:48081/Operation/CarApprove/Approve?carBusinessId=TDC1012017082344&title=%E6%8F%90%E4%BA%A4%E8%BD%A6%E8%BE%86%E8%AF%84%E4%BC%B0&accept_type=Manage&flow_business_type=%E8%BD%A6%E6%98%93%E8%B4%B7"
 1503473506325	Marionette	DEBUG	Received DOM event "pagehide" for "http://oatest.bujidele.com:48081/Operation/CarApprove/Approve?carBusinessId=TDC1012017082344&title=%E6%8F%90%E4%BA%A4%E8%BD%A6%E8%BE%86%E8%AF%84%E4%BC%B0&accept_type=Manage&flow_business_type=%E8%BD%A6%E6%98%93%E8%B4%B7"
 1503473506325	Marionette	DEBUG	Received DOM event "unload" for "http://oatest.bujidele.com:48081/Operation/CarApprove/Approve?carBusinessId=TDC1012017082344&title=%E6%8F%90%E4%BA%A4%E8%BD%A6%E8%BE%86%E8%AF%84%E4%BC%B0&accept_type=Manage&flow_business_type=%E8%BD%A6%E6%98%93%E8%B4%B7"
+1503473613105	geckodriver	INFO	geckodriver 0.18.0
+1503473613118	geckodriver	INFO	Listening on 127.0.0.1:59300
+1503473613650	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args ["-marionette"]
+1503473614576	Marionette	INFO	Enabled via --marionette
+[GPU 11572] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1503473616309	Marionette	INFO	Listening on port 59304
+1503473616356	Marionette	INFO	Listening on port 59304
+1503473616442	Marionette	WARN	TLS certificate errors will be ignored for this session
+1503473616484	Marionette	DEBUG	loaded listener.js
+1503473616518	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1503473616565	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1503473616565	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1503473617321	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
+1503473618304	Marionette	DEBUG	Received DOM event "pageshow" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
+1503473618702	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473621394	Marionette	DEBUG	Received DOM event "beforeunload" for "http://oatest.bujidele.com:48081//Admin/Home/Index"
+1503473622493	Marionette	DEBUG	Received DOM event "pagehide" for "http://oatest.bujidele.com:48081//Admin/Home/Index"
+1503473622495	Marionette	DEBUG	Received DOM event "unload" for "http://oatest.bujidele.com:48081//Admin/Home/Index"
+1503473626373	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://oatest.bujidele.com:48081/Operation/Manage/Index"
+1503473626601	Marionette	DEBUG	Received DOM event "pageshow" for "http://oatest.bujidele.com:48081/Operation/Manage/Index"
+1503473626774	Marionette	DEBUG	Received DOM event "pagehide" for "http://oatest.bujidele.com:48081/Operation/Manage/Index"
+1503473627024	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473627402	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473628107	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473629358	Marionette	DEBUG	Received DOM event "beforeunload" for "http://oatest.bujidele.com:48081/Operation/Manage/Index"
+1503473629373	Marionette	DEBUG	Received DOM event "pagehide" for "http://oatest.bujidele.com:48081/Operation/Manage/Index"
+1503473629376	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483658"
+1503473629585	Marionette	DEBUG	Received DOM event "pagehide" for "http://oatest.bujidele.com:48081/Operation/Manage/Index"
+1503473629586	Marionette	DEBUG	Received DOM event "unload" for "http://oatest.bujidele.com:48081/Operation/Manage/Index"
+1503473629891	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://oatest.bujidele.com:48081/Operation/Manage/Index?carBusinessId=TDC1012017082345&custName=&businessType=ALL"
+1503473630090	Marionette	DEBUG	Received DOM event "pageshow" for "http://oatest.bujidele.com:48081/Operation/Manage/Index?carBusinessId=TDC1012017082345&custName=&businessType=ALL"
+1503473630372	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473632671	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473634211	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473634538	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473634817	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473635265	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473636008	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473636795	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473637253	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473639004	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473639288	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473639566	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473639793	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473640046	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473640274	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473640521	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473640775	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473641109	Marionette	DEBUG	Received DOM event "beforeunload" for "http://oatest.bujidele.com:48081/Operation/Car/Index/TDC1012017082345"
+1503473641357	Marionette	DEBUG	Received DOM event "pagehide" for "http://oatest.bujidele.com:48081/Operation/Car/Index/TDC1012017082345"
+1503473641358	Marionette	DEBUG	Received DOM event "unload" for "http://oatest.bujidele.com:48081/Operation/Car/Index/TDC1012017082345"
+1503473643679	Marionette	DEBUG	Received DOM event "pagehide" for "http://oatest.bujidele.com:48081/Operation/Manage/Index?carBusinessId=TDC1012017082345&custName=&businessType=ALL"
+1503473643693	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473645156	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473761864	geckodriver	INFO	geckodriver 0.18.0
+1503473761876	geckodriver	INFO	Listening on 127.0.0.1:59676
+1503473762418	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args ["-marionette"]
+1503473763460	Marionette	INFO	Enabled via --marionette
+1503473765160	Marionette	INFO	Listening on port 59680
+1503473765172	Marionette	INFO	Listening on port 59680
+1503473765309	Marionette	WARN	TLS certificate errors will be ignored for this session
+1503473765349	Marionette	DEBUG	loaded listener.js
+1503473765376	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1503473765427	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1503473765428	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1503473766689	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
+1503473766787	Marionette	DEBUG	Received DOM event "pageshow" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
+1503473767064	Marionette	DEBUG	Received DOM event "beforeunload" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
+1503473767438	Marionette	DEBUG	Received DOM event "pagehide" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
+1503473767438	Marionette	DEBUG	Received DOM event "unload" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
+1503473768490	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://oatest.bujidele.com:48081//Admin/Home/Index"
+1503473768926	Marionette	DEBUG	Received DOM event "pageshow" for "http://oatest.bujidele.com:48081//Admin/Home/Index"
+1503473768991	Marionette	DEBUG	Received DOM event "beforeunload" for "http://oatest.bujidele.com:48081//Admin/Home/Index"
+1503473770770	Marionette	DEBUG	Received DOM event "pagehide" for "http://oatest.bujidele.com:48081//Admin/Home/Index"
+1503473770772	Marionette	DEBUG	Received DOM event "unload" for "http://oatest.bujidele.com:48081//Admin/Home/Index"
+1503473775742	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://oatest.bujidele.com:48081/Operation/Manage/Index"
+1503473775892	Marionette	DEBUG	Received DOM event "pageshow" for "http://oatest.bujidele.com:48081/Operation/Manage/Index"
+1503473776067	Marionette	DEBUG	Received DOM event "pagehide" for "http://oatest.bujidele.com:48081/Operation/Manage/Index"
+1503473776313	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473776754	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473777384	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473778627	Marionette	DEBUG	Received DOM event "beforeunload" for "http://oatest.bujidele.com:48081/Operation/Manage/Index"
+1503473778649	Marionette	DEBUG	Received DOM event "pagehide" for "http://oatest.bujidele.com:48081/Operation/Manage/Index"
+1503473778669	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483658"
+1503473778838	Marionette	DEBUG	Received DOM event "pagehide" for "http://oatest.bujidele.com:48081/Operation/Manage/Index"
+1503473778839	Marionette	DEBUG	Received DOM event "unload" for "http://oatest.bujidele.com:48081/Operation/Manage/Index"
+1503473779239	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://oatest.bujidele.com:48081/Operation/Manage/Index?carBusinessId=TDC1012017082346&custName=&businessType=ALL"
+1503473779424	Marionette	DEBUG	Received DOM event "pageshow" for "http://oatest.bujidele.com:48081/Operation/Manage/Index?carBusinessId=TDC1012017082346&custName=&businessType=ALL"
+1503473779692	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473781988	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473783570	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473783857	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473784135	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473784560	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473786348	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473787138	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473787558	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473789259	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473789532	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473789806	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473790050	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473790288	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473790518	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473790765	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473791015	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473791335	Marionette	DEBUG	Received DOM event "beforeunload" for "http://oatest.bujidele.com:48081/Operation/Car/Index/TDC1012017082346"
+1503473791605	Marionette	DEBUG	Received DOM event "pagehide" for "http://oatest.bujidele.com:48081/Operation/Car/Index/TDC1012017082346"
+1503473791606	Marionette	DEBUG	Received DOM event "unload" for "http://oatest.bujidele.com:48081/Operation/Car/Index/TDC1012017082346"
+1503473793922	Marionette	DEBUG	Received DOM event "pagehide" for "http://oatest.bujidele.com:48081/Operation/Manage/Index?carBusinessId=TDC1012017082346&custName=&businessType=ALL"
+1503473793926	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503473796134	Marionette	DEBUG	Received DOM event "beforeunload" for "http://oatest.bujidele.com:48081/Operation/CarApprove/Approve?carBusinessId=TDC1012017082346&title=%E6%8F%90%E4%BA%A4%E8%BD%A6%E8%BE%86%E8%AF%84%E4%BC%B0&accept_type=Manage&flow_business_type=%E8%BD%A6%E6%98%93%E8%B4%B7"
+1503473796789	Marionette	DEBUG	Received DOM event "pagehide" for "http://oatest.bujidele.com:48081/Operation/CarApprove/Approve?carBusinessId=TDC1012017082346&title=%E6%8F%90%E4%BA%A4%E8%BD%A6%E8%BE%86%E8%AF%84%E4%BC%B0&accept_type=Manage&flow_business_type=%E8%BD%A6%E6%98%93%E8%B4%B7"
+1503473796790	Marionette	DEBUG	Received DOM event "unload" for "http://oatest.bujidele.com:48081/Operation/CarApprove/Approve?carBusinessId=TDC1012017082346&title=%E6%8F%90%E4%BA%A4%E8%BD%A6%E8%BE%86%E8%AF%84%E4%BC%B0&accept_type=Manage&flow_business_type=%E8%BD%A6%E6%98%93%E8%B4%B7"

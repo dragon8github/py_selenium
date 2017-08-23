@@ -25,7 +25,7 @@ class Lib:
 
     # 先执行指定的事情，然后再睡眠制定的时间
     def afterSleep(self, time, method):
-        value = method(self)
+        value = method(self.driver)
         sleep(time)
         return value
 
@@ -85,7 +85,7 @@ class Lib:
         self.driver.find_element_by_xpath(key).clear()
         self.driver.find_element_by_xpath(key).send_keys(value)
 
-    # 判断alert是否存在，如果存在。返回alert实例，否则返回false
+    # 判断alert是否存在，如果存在。返回alert实例，否则返回False
     def alertIsPresent(self):
         try:
             _alert = self.driver.switch_to.alert

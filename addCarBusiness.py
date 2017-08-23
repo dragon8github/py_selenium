@@ -101,19 +101,19 @@ class AddCarBusiness(unittest.TestCase):
         # 设置表单
         self.L.setValueById("model_tb_car_apply_apply_money", "100000")
         self.L.setValueById("model_tb_car_apply_purpose_explain", "123456")
-        # 添加担保人
-        self.L.afterSleep(0.5, lambda x: x.find_element_by_id('add_tr').click())
+        # # 添加担保人
+        self.L.afterSleep(lambda x: x.find_element_by_id('add_tr').click(), 0.5)
         self.L.setValueById("list_tb_fsd_guarantee_information_list_0__guarantee_name", "担保个人")
         self.L.setValueById("list_tb_fsd_guarantee_information_list_0__identify_card", "221413199003057313")
         self.L.setValueById("list_tb_fsd_guarantee_information_list_0__guarantee_phone", "13674122698")
         self.L.setValueById("list_tb_fsd_guarantee_information_list_0__guarantee_address", "担保个人地址")
-        # # 添加担保公司
-        # self.L.afterSleep(0.5, lambda x: x.find_element_by_id('add_company_tr').click())
-        # self.L.setValueById("list_tb_fsd_guarantee_information_list_1__guarantee_company_name", "担保企业")
-        # self.L.setValueById("list_tb_fsd_guarantee_information_list_1__guarantee_name", "担保法人")
-        # self.L.setValueById("list_tb_fsd_guarantee_information_list_1__guarantee_unifiedCode", "daimai32147")
-        # self.L.setValueById("list_tb_fsd_guarantee_information_list_1__guarantee_phone", "13214785265")
-        # self.L.setValueById("list_tb_fsd_guarantee_information_list_1__guarantee_address", "担保企业地址")
+        # 添加担保公司
+        self.driver.execute_script("add_company_tr()")
+        self.L.setValueById("list_tb_fsd_guarantee_information_list_1__guarantee_company_name", "担保企业")
+        self.L.setValueById("list_tb_fsd_guarantee_information_list_1__guarantee_name", "担保法人")
+        self.L.setValueById("list_tb_fsd_guarantee_information_list_1__guarantee_unifiedCode", "daimai32147")
+        self.L.setValueById("list_tb_fsd_guarantee_information_list_1__guarantee_phone", "13214785265")
+        self.L.setValueById("list_tb_fsd_guarantee_information_list_1__guarantee_address", "担保企业地址")
         # 联系人资料
         self.L.setValueById("model_tb_car_contacts_mate_name", "987")
         self.L.setValueById("model_tb_car_contacts_mate_mobilephone", "987")
@@ -122,11 +122,11 @@ class AddCarBusiness(unittest.TestCase):
         self.L.setValueById("model_tb_car_contacts_directly_person_mobilephone", "1236")
         self.L.setValueById("model_tb_car_contacts_other_person", "联系人")
         self.L.setValueById("model_tb_car_contacts_other_person_mobilephone", "369852")
-        # 选择器
+        # # 选择器
         self.L.waitForSelectTextById('model_tb_car_apply_apply_repayment_type_ID', '先息后本')
         self.L.waitForSelectTextById('model_tb_car_apply_apply_time_limit', '3个月')
         self.L.waitForSelectTextById('model_tb_car_apply_purpose_type', '教育支出')
-        # 特殊选择器
+        # # 特殊选择器
         self.driver.find_element_by_id("s2id_model_tb_business_output_Pledee_ID").click()
         self.driver.find_element_by_xpath('//*[@id="select2-drop"]/ul/li[4]').click()
         self.driver.find_element_by_id('s2id_model_tb_business_output_Lender_ID').click()

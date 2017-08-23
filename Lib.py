@@ -24,7 +24,7 @@ class Lib:
         return method(self.driver)
 
     # 先执行指定的事情，然后再睡眠制定的时间
-    def afterSleep(self, time, method):
+    def afterSleep(self, method, time):
         value = method(self.driver)
         sleep(time)
         return value

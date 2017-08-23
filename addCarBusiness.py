@@ -54,8 +54,8 @@ class AddCarBusiness(unittest.TestCase):
         self.L.setValueById("carBusinessId", id)
         # 点击搜索
         self.driver.find_element_by_css_selector('#search .btn').click()
-        # 等待【编辑】按钮出现，然后点击它
-        self.L.waitForElementByCss('.table > tbody > tr td:nth-child(10) > a').click()
+        # 等待【编辑】按钮出现（确保只有一条数据的情况下才会运行）
+        self.L.waitForElementByCssWhere(lambda x: self.L.getElementsCountByCss('.table > tbody > tr') == 1, '.table > tbody > tr td:nth-child(10) > a').click()
         # 等待iframe并且将当前窗口切换为该iframe
         self.driver.switch_to.frame(self.L.waitForElementByCss('#layui-layer1 iframe'))
         # 等待一个【编辑】按钮出来
@@ -101,7 +101,7 @@ class AddCarBusiness(unittest.TestCase):
         # 设置表单
         self.L.setValueById("model_tb_car_apply_apply_money", "100000")
         self.L.setValueById("model_tb_car_apply_purpose_explain", "123456")
-        # # 添加担保人
+        # 添加担保人
         self.L.afterSleep(lambda x: x.find_element_by_id('add_tr').click(), 0.5)
         self.L.setValueById("list_tb_fsd_guarantee_information_list_0__guarantee_name", "担保个人")
         self.L.setValueById("list_tb_fsd_guarantee_information_list_0__identify_card", "221413199003057313")
@@ -122,16 +122,51 @@ class AddCarBusiness(unittest.TestCase):
         self.L.setValueById("model_tb_car_contacts_directly_person_mobilephone", "1236")
         self.L.setValueById("model_tb_car_contacts_other_person", "联系人")
         self.L.setValueById("model_tb_car_contacts_other_person_mobilephone", "369852")
-        # # 选择器
+        # 选择器
         self.L.waitForSelectTextById('model_tb_car_apply_apply_repayment_type_ID', '先息后本')
         self.L.waitForSelectTextById('model_tb_car_apply_apply_time_limit', '3个月')
         self.L.waitForSelectTextById('model_tb_car_apply_purpose_type', '教育支出')
-        # # 特殊选择器
+        # 特殊选择器
         self.driver.find_element_by_id("s2id_model_tb_business_output_Pledee_ID").click()
         self.driver.find_element_by_xpath('//*[@id="select2-drop"]/ul/li[4]').click()
         self.driver.find_element_by_id('s2id_model_tb_business_output_Lender_ID').click()
         self.driver.find_element_by_xpath('//*[@id="select2-drop"]/ul/li[4]').click()
 
+        # 开始进入第三个tag
+        self.EditCarBusiness_3()
+
+    def EditCarBusiness_3(self):
+        # 切换进入第三个tag
+        self.driver.find_element_by_link_text(u"车辆信息").click()
+        # 设置表单
+        self.L.setValueById("model_tb_car_info_license_plate_number", "粤C56451")
+        self.L.setValueById("model_tb_car_info_car_body_color", "bai")
+        self.L.setValueById("model_tb_car_info_car_brand", "丰田")
+        self.L.setValueById("model_tb_car_info_car_model_number", "xinghao234")
+
+        # 保存
+        self.driver.find_element_by_id("save").click()
+        # 等待alert并且点击确认
+        self.L.waitForAlert().accept()
+        # 进入下一阶段
+        self.submitOrder()
+
+    def submitOrder(self):
+        # 切换回主界面
+        self.driver.switch_to.default_content()
+        # 等待js加载完毕，因为上一阶段提交表单之后。
+        if self.L.waitForJsLoadFinish():
+            # 点击提交按钮(TODO:这里不知道为什么需要2秒)
+            self.L.sleep(2, lambda x: self.L.waitForElementByCss(".table > tbody > tr td:nth-child(11) > a").click())
+            # 等待iframe并且将当前窗口切换为该iframe
+            self.driver.switch_to.frame(self.L.waitForElementByCss('iframe'))
+            # 设置日志
+            self.L.setValueById("log_remark", "同意提交")
+            # 点击提交按钮
+            self.L.sleep(1, lambda x: self.driver.find_element_by_id("btnSubmit").click())
+            # 等待alert并且点击确认
+            self.L.waitForAlert().accept()
+        
 
     # def tearDown(self):
         # self.driver.quit()

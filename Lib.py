@@ -76,14 +76,17 @@ class Lib:
 
     # 先清空值，再进行输入
     def setValueById(self, key, value):
-        self.driver.find_element_by_id(key).clear()
-        self.driver.find_element_by_id(key).send_keys(value)    
+        element = self.waitForElementById(key)
+        element.clear()
+        element.send_keys(value)    
     def setValueByCss(self, key, value):
-        self.driver.find_element_by_css_selector(key).clear()
-        self.driver.find_element_by_css_selector(key).send_keys(value)
+        element = self.waitForElementByCss(key)
+        element.clear()
+        element.send_keys(value)    
     def setValueByXpath(self, key, value):
-        self.driver.find_element_by_xpath(key).clear()
-        self.driver.find_element_by_xpath(key).send_keys(value)
+        element = self.waitForElementByXpath(key)
+        element.clear()
+        element.send_keys(value)
 
     # 判断alert是否存在，如果存在。返回alert实例，否则返回False
     def alertIsPresent(self):
@@ -99,3 +102,19 @@ class Lib:
     # 等待alert出现
     def waitForAlert(self, time = 30):
         return WebDriverWait(self.driver, time).until(lambda x: self.alertIsPresent())
+
+    # 当(回调函数)条件满足且元素存在的时候，才返回元素
+    def waitForElementByCssWhere(self, method, path, time = 30):
+        return WebDriverWait(self.driver, time).until(lambda x: method(x) and x.find_element_by_css_selector(path))
+
+    # 获取元素的数量, 如果元素不存在则返回0
+    def getElementsCountByCss(self, path):
+        return len(self.driver.find_elements_by_css_selector(path))
+    def getElementsCountById(self, path):
+        return len(self.driver.find_element_by_id(path))
+    def getElementsCountByXpath(self, path):
+        return len(self.driver.find_element_by_xpath(path))
+
+    # 如果条件表达式不为True的时候，那么就继续执行某个表达式
+    def execWhere(self, condition_method, main_method, time = 30):
+        return WebDriverWait(self.driver, time).until(lambda x: condition_method(x) and main_method(x))

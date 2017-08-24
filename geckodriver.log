@@ -4577,23 +4577,42 @@ c/chrome/common/ipc_channel_win.cc, line 346
 1503470201490	Marionette	DEBUG	Received DOM event "unload" for "http://oatest.bujidele.com:48081/Operation/Manage/Index"
 1503470201767	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://oatest.bujidele.com:48081/Operation/Manage/Index?carBusinessId=TDC1012017082330&custName=&businessType=ALL"
 1503470201979	Marionette	DEBUG	Received DOM event "pageshow" for "http://oatest.bujidele.com:48081/Operation/Manage/Index?carBusinessId=TDC1012017082330&custName=&businessType=ALL"
-1503470228601	geckodriver	INFO	geckodriver 0.18.0
-1503470228612	geckodriver	INFO	Listening on 127.0.0.1:53914
-1503470229166	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args ["-marionette"]
-1503470229832	Marionette	INFO	Enabled via --marionette
-[Parent 7584] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-[Child 3384] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-[Child 3384] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-1503470231196	Marionette	INFO	Listening on port 53918
-1503470231209	Marionette	INFO	Listening on port 53918
-1503470231315	Marionette	WARN	TLS certificate errors will be ignored for this session
-1503470231349	Marionette	DEBUG	loaded listener.js
-1503470231370	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
-1503470231414	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
-1503470231414	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
-1503470232183	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
-1503470232584	Marionette	DEBUG	Received DOM event "pageshow" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
-1503470232847	Marionette	DEBUG	Received DOM event "beforeunload" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+[GPU 12388] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[GPU 12388] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+console.error: 
+  Message: Error: SessionFile is closed
+  Stack:
+    write@resource:///modules/sessionstore/SessionFile.jsm:315:29
+write@resource:///modules/sessionstore/SessionFile.jsm:74:12
+_writeState@resource:///modules/sessionstore/SessionSaver.jsm:343:12
+_saveState@resource:///modules/sessionstore/SessionSaver.jsm:281:12
+_saveStateAsync@resource:///modules/sessionstore/SessionSaver.jsm:327:5
+runDelayed/this._timeoutID<@resource:///modules/sessionstore/SessionSaver.jsm:184:40
+setTimeout_timer@resource://gre/modules/Timer.jsm:30:5
+
+[GPU 12388] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+	DEBUG	Received DOM event "beforeunload" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
 1503470233208	Marionette	DEBUG	Received DOM event "pagehide" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
 1503470233208	Marionette	DEBUG	Received DOM event "unload" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
 1503470234335	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://oatest.bujidele.com:48081//Admin/Home/Index"
@@ -4711,33 +4730,55 @@ send/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/
 exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:101:14
 exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:101:14
 Line: 1773, column: 11
-1503470581372	geckodriver	INFO	geckodriver 0.18.0
-1503470581384	geckodriver	INFO	Listening on 127.0.0.1:54328
-1503470581931	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args ["-marionette"]
-1503470582609	Marionette	INFO	Enabled via --marionette
-[GPU 18852] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-[Child 11976] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-[Child 11976] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-1503470583905	Marionette	INFO	Listening on port 54332
-1503470583950	Marionette	INFO	Listening on port 54332
-1503470584086	Marionette	WARN	TLS certificate errors will be ignored for this session
-1503470584130	Marionette	DEBUG	loaded listener.js
-1503470584164	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
-1503470584210	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
-1503470584210	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
-1503470585102	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
-1503470585520	Marionette	DEBUG	Received DOM event "pageshow" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
-1503470585784	Marionette	DEBUG	Received DOM event "beforeunload" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
-1503470586184	Marionette	DEBUG	Received DOM event "pagehide" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
-1503470586184	Marionette	DEBUG	Received DOM event "unload" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
-1503470587146	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://oatest.bujidele.com:48081//Admin/Home/Index"
-1503470587711	Marionette	DEBUG	Received DOM event "pageshow" for "http://oatest.bujidele.com:48081//Admin/Home/Index"
-1503470587769	Marionette	DEBUG	Received DOM event "beforeunload" for "http://oatest.bujidele.com:48081//Admin/Home/Index"
-1503470588964	Marionette	DEBUG	Received DOM event "pagehide" for "http://oatest.bujidele.com:48081//Admin/Home/Index"
-1503470588966	Marionette	DEBUG	Received DOM event "unload" for "http://oatest.bujidele.com:48081//Admin/Home/Index"
-1503470593117	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://oatest.bujidele.com:48081/Operation/Manage/Index"
-1503470593306	Marionette	DEBUG	Received DOM event "pageshow" for "http://oatest.bujidele.com:48081/Operation/Manage/Index"
-1503470593496	Marionette	DEBUG	Received DOM event "pagehide" for "http://oatest.bujidele.com:48081/Operation/Manage/Index"
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+[GPU 11888] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[GPU 11888] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+console.error: 
+  Message: Error: SessionFile is closed
+  Stack:
+    write@resource:///modules/sessionstore/SessionFile.jsm:315:29
+write@resource:///modules/sessionstore/SessionFile.jsm:74:12
+_writeState@resource:///modules/sessionstore/SessionSaver.jsm:343:12
+_saveState@resource:///modules/sessionstore/SessionSaver.jsm:281:12
+_saveStateAsync@resource:///modules/sessionstore/SessionSaver.jsm:327:5
+runDelayed/this._timeoutID<@resource:///modules/sessionstore/SessionSaver.jsm:184:40
+setTimeout_timer@resource://gre/modules/Timer.jsm:30:5
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x880001,name=PJavaScript::Msg_DropObject) Channel error: cannot send/recv
+
+[GPU 11888] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+
 1503470593685	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
 1503470594058	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
 1503470594679	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
@@ -4771,22 +4812,57 @@ Line: 1773, column: 11
 1503470610493	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967307"
 1503470611306	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://oatest.bujidele.com:48081/Operation/Manage/Index?carBusinessId=TDC1012017082332&custName=&businessType=ALL"
 1503470612213	Marionette	DEBUG	Received DOM event "pageshow" for "http://oatest.bujidele.com:48081/Operation/Manage/Index?carBusinessId=TDC1012017082332&custName=&businessType=ALL"
-1503470785129	geckodriver	INFO	geckodriver 0.18.0
-1503470785141	geckodriver	INFO	Listening on 127.0.0.1:54682
-1503470785699	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args ["-marionette"]
-1503470786427	Marionette	INFO	Enabled via --marionette
-[GPU 19004] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-[Parent 14872] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-[Child 11908] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-[Child 11908] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-1503470787809	Marionette	INFO	Listening on port 54686
-1503470787833	Marionette	INFO	Listening on port 54686
-1503470787865	Marionette	WARN	TLS certificate errors will be ignored for this session
-1503470787950	Marionette	DEBUG	loaded listener.js
-1503470787986	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
-1503470788029	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
-1503470788030	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
-1503470788774	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+console.error: 
+  Message: Error: SessionFile is closed
+  Stack:
+    write@resource:///modules/sessionstore/SessionFile.jsm:315:29
+write@resource:///modules/sessionstore/SessionFile.jsm:74:12
+_writeState@resource:///modules/sessionstore/SessionSaver.jsm:343:12
+_saveState@resource:///modules/sessionstore/SessionSaver.jsm:281:12
+_saveStateAsync@resource:///modules/sessionstore/SessionSaver.jsm:327:5
+runDelayed/this._timeoutID<@resource:///modules/sessionstore/SessionSaver.jsm:184:40
+setTimeout_timer@resource://gre/modules/Timer.jsm:30:5
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+OM event "DOMContentLoaded" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
 1503470789132	Marionette	DEBUG	Received DOM event "pageshow" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
 1503470789366	Marionette	DEBUG	Received DOM event "beforeunload" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
 1503470789760	Marionette	DEBUG	Received DOM event "pagehide" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
@@ -4834,19 +4910,23 @@ Line: 1773, column: 11
 1503470814992	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967307"
 1503470815394	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://oatest.bujidele.com:48081/Operation/Manage/Index?carBusinessId=TDC1012017082333&custName=&businessType=ALL"
 1503470815898	Marionette	DEBUG	Received DOM event "pageshow" for "http://oatest.bujidele.com:48081/Operation/Manage/Index?carBusinessId=TDC1012017082333&custName=&businessType=ALL"
-1503470929897	geckodriver	INFO	geckodriver 0.18.0
-1503470929908	geckodriver	INFO	Listening on 127.0.0.1:55085
-1503470930436	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args ["-marionette"]
-1503470931119	Marionette	INFO	Enabled via --marionette
-[GPU 16272] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-1503470932474	Marionette	INFO	Listening on port 55089
-1503470932493	Marionette	INFO	Listening on port 55089
-1503470932588	Marionette	WARN	TLS certificate errors will be ignored for this session
-1503470932620	Marionette	DEBUG	loaded listener.js
-1503470932646	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
-1503470932715	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
-1503470932715	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
-1503470933336	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
+[GPU 19004] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+console.error: 
+  Message: Error: SessionFile is closed
+  Stack:
+    write@resource:///modules/sessionstore/SessionFile.jsm:315:29
+write@resource:///modules/sessionstore/SessionFile.jsm:74:12
+_writeState@resource:///modules/sessionstore/SessionSaver.jsm:343:12
+_saveState@resource:///modules/sessionstore/SessionSaver.jsm:281:12
+_saveStateAsync@resource:///modules/sessionstore/SessionSaver.jsm:327:5
+runDelayed/this._timeoutID<@resource:///modules/sessionstore/SessionSaver.jsm:184:40
+setTimeout_timer@resource://gre/modules/Timer.jsm:30:5
+
+[GPU 19004] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
 1503470933946	Marionette	DEBUG	Received DOM event "pageshow" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
 1503470934308	Marionette	DEBUG	Received DOM event "beforeunload" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
 1503470934695	Marionette	DEBUG	Received DOM event "pagehide" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
@@ -4936,12 +5016,18 @@ Task_spawn@resource://gre/modules/Task.jsm:168:12
 dispatch/<@chrome://marionette/content/listener.js:427:15
 
 *************************
-1503471339829	geckodriver	INFO	geckodriver 0.18.0
-1503471339844	geckodriver	INFO	Listening on 127.0.0.1:55482
-1503471340393	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args ["-marionette"]
-1503471341146	Marionette	INFO	Enabled via --marionette
-[Child 15132] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-[Child 15132] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+console.error: 
+  Message: Error: SessionFile is closed
+  Stack:
+    write@resource:///modules/sessionstore/SessionFile.jsm:315:29
+write@resource:///modules/sessionstore/SessionFile.jsm:74:12
+_writeState@resource:///modules/sessionstore/SessionSaver.jsm:343:12
+_saveState@resource:///modules/sessionstore/SessionSaver.jsm:281:12
+_saveStateAsync@resource:///modules/sessionstore/SessionSaver.jsm:327:5
+runDelayed/this._timeoutID<@resource:///modules/sessionstore/SessionSaver.jsm:184:40
+setTimeout_timer@resource://gre/modules/Timer.jsm:30:5
+
+00000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
 1503471342641	Marionette	INFO	Listening on port 55486
 1503471342668	Marionette	INFO	Listening on port 55486
 1503471342722	Marionette	WARN	TLS certificate errors will be ignored for this session
@@ -4994,34 +5080,52 @@ dispatch/<@chrome://marionette/content/listener.js:427:15
 1503471369631	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967307"
 1503471370049	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://oatest.bujidele.com:48081/Operation/Manage/Index?carBusinessId=TDC1012017082335&custName=&businessType=ALL"
 1503471370564	Marionette	DEBUG	Received DOM event "pageshow" for "http://oatest.bujidele.com:48081/Operation/Manage/Index?carBusinessId=TDC1012017082335&custName=&businessType=ALL"
-1503471594616	geckodriver	INFO	geckodriver 0.18.0
-1503471594628	geckodriver	INFO	Listening on 127.0.0.1:55931
-1503471595174	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args ["-marionette"]
-1503471595881	Marionette	INFO	Enabled via --marionette
-1503471597229	Marionette	INFO	Listening on port 55935
-1503471597254	Marionette	INFO	Listening on port 55935
-1503471597361	Marionette	WARN	TLS certificate errors will be ignored for this session
-1503471597398	Marionette	DEBUG	loaded listener.js
-1503471597430	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
-1503471597488	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
-1503471597488	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
-1503471598548	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
-1503471598966	Marionette	DEBUG	Received DOM event "pageshow" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
-1503471599250	Marionette	DEBUG	Received DOM event "beforeunload" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
-1503471599648	Marionette	DEBUG	Received DOM event "pagehide" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
-1503471599649	Marionette	DEBUG	Received DOM event "unload" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
-1503471603319	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://oatest.bujidele.com:48081//Admin/Home/Index"
-1503471604388	Marionette	DEBUG	Received DOM event "pageshow" for "http://oatest.bujidele.com:48081//Admin/Home/Index"
-1503471604453	Marionette	DEBUG	Received DOM event "beforeunload" for "http://oatest.bujidele.com:48081//Admin/Home/Index"
-1503471605451	Marionette	DEBUG	Received DOM event "pagehide" for "http://oatest.bujidele.com:48081//Admin/Home/Index"
-1503471605453	Marionette	DEBUG	Received DOM event "unload" for "http://oatest.bujidele.com:48081//Admin/Home/Index"
-1503471606513	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://oatest.bujidele.com:48081/Operation/Manage/Index"
-1503471607090	Marionette	DEBUG	Received DOM event "pageshow" for "http://oatest.bujidele.com:48081/Operation/Manage/Index"
-1503471607297	Marionette	DEBUG	Received DOM event "pagehide" for "http://oatest.bujidele.com:48081/Operation/Manage/Index"
-1503471607403	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
-1503471607883	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
-1503471608532	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
-1503471609906	Marionette	DEBUG	Received DOM event "beforeunload" for "http://oatest.bujidele.com:48081/Operation/Manage/Index"
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+[GPU 1908] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[GPU 1908] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+console.error: 
+  Message: Error: SessionFile is closed
+  Stack:
+    write@resource:///modules/sessionstore/SessionFile.jsm:315:29
+write@resource:///modules/sessionstore/SessionFile.jsm:74:12
+_writeState@resource:///modules/sessionstore/SessionSaver.jsm:343:12
+_saveState@resource:///modules/sessionstore/SessionSaver.jsm:281:12
+_saveStateAsync@resource:///modules/sessionstore/SessionSaver.jsm:327:5
+runDelayed/this._timeoutID<@resource:///modules/sessionstore/SessionSaver.jsm:184:40
+setTimeout_timer@resource://gre/modules/Timer.jsm:30:5
+
+[GPU 1908] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+"http://oatest.bujidele.com:48081/Operation/Manage/Index"
 1503471610198	Marionette	DEBUG	Received DOM event "pagehide" for "http://oatest.bujidele.com:48081/Operation/Manage/Index"
 1503471610198	Marionette	DEBUG	Received DOM event "unload" for "http://oatest.bujidele.com:48081/Operation/Manage/Index"
 1503471610497	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://oatest.bujidele.com:48081/Operation/Manage/Index?carBusinessId=TDC1012017082336&custName=&businessType=ALL"
@@ -5051,39 +5155,66 @@ dispatch/<@chrome://marionette/content/listener.js:427:15
 1503471624577	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483662"
 1503471624729	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://oatest.bujidele.com:48081/Operation/Manage/Index?carBusinessId=TDC1012017082336&custName=&businessType=ALL"
 1503471624954	Marionette	DEBUG	Received DOM event "pageshow" for "http://oatest.bujidele.com:48081/Operation/Manage/Index?carBusinessId=TDC1012017082336&custName=&businessType=ALL"
-1503471924053	geckodriver	INFO	geckodriver 0.18.0
-1503471924065	geckodriver	INFO	Listening on 127.0.0.1:56357
-1503471924611	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args ["-marionette"]
-1503471925296	Marionette	INFO	Enabled via --marionette
-[Child 14812] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-[Child 14812] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-1503471926797	Marionette	INFO	Listening on port 56361
-1503471926817	Marionette	INFO	Listening on port 56361
-1503471926852	Marionette	WARN	TLS certificate errors will be ignored for this session
-1503471926892	Marionette	DEBUG	loaded listener.js
-1503471926926	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
-1503471926975	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
-1503471926975	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
-1503471927905	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
-1503471928371	Marionette	DEBUG	Received DOM event "pageshow" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
-1503471928662	Marionette	DEBUG	Received DOM event "beforeunload" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
-1503471929085	Marionette	DEBUG	Received DOM event "pagehide" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
-1503471929086	Marionette	DEBUG	Received DOM event "unload" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
-1503471930070	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://oatest.bujidele.com:48081//Admin/Home/Index"
-1503471930389	Marionette	DEBUG	Received DOM event "pageshow" for "http://oatest.bujidele.com:48081//Admin/Home/Index"
-1503471930453	Marionette	DEBUG	Received DOM event "beforeunload" for "http://oatest.bujidele.com:48081//Admin/Home/Index"
-1503471931330	Marionette	DEBUG	Received DOM event "pagehide" for "http://oatest.bujidele.com:48081//Admin/Home/Index"
-1503471931332	Marionette	DEBUG	Received DOM event "unload" for "http://oatest.bujidele.com:48081//Admin/Home/Index"
-1503471939771	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://oatest.bujidele.com:48081/Operation/Manage/Index"
-1503471939944	Marionette	DEBUG	Received DOM event "pageshow" for "http://oatest.bujidele.com:48081/Operation/Manage/Index"
-1503471940173	Marionette	DEBUG	Received DOM event "pagehide" for "http://oatest.bujidele.com:48081/Operation/Manage/Index"
-1503471940310	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
-1503471940807	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
-1503471941467	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
-1503471942804	Marionette	DEBUG	Received DOM event "beforeunload" for "http://oatest.bujidele.com:48081/Operation/Manage/Index"
-1503471943056	Marionette	DEBUG	Received DOM event "pagehide" for "http://oatest.bujidele.com:48081/Operation/Manage/Index"
-1503471943057	Marionette	DEBUG	Received DOM event "unload" for "http://oatest.bujidele.com:48081/Operation/Manage/Index"
-1503471943371	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://oatest.bujidele.com:48081/Operation/Manage/Index?carBusinessId=TDC1012017082337&custName=&businessType=ALL"
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+[GPU 10964] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x44003F,name=PContent::Msg_Shutdown) Channel error: cannot send/recv
+
+console.error: 
+  Message: Error: SessionFile is closed
+  Stack:
+    write@resource:///modules/sessionstore/SessionFile.jsm:315:29
+write@resource:///modules/sessionstore/SessionFile.jsm:74:12
+_writeState@resource:///modules/sessionstore/SessionSaver.jsm:343:12
+_saveState@resource:///modules/sessionstore/SessionSaver.jsm:281:12
+_saveStateAsync@resource:///modules/sessionstore/SessionSaver.jsm:327:5
+runDelayed/this._timeoutID<@resource:///modules/sessionstore/SessionSaver.jsm:184:40
+setTimeout_timer@resource://gre/modules/Timer.jsm:30:5
+
+[GPU 10964] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+onette	DEBUG	Received DOM event "DOMContentLoaded" for "http://oatest.bujidele.com:48081/Operation/Manage/Index?carBusinessId=TDC1012017082337&custName=&businessType=ALL"
 1503471943571	Marionette	DEBUG	Received DOM event "pageshow" for "http://oatest.bujidele.com:48081/Operation/Manage/Index?carBusinessId=TDC1012017082337&custName=&businessType=ALL"
 1503471943838	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
 1503471946219	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
@@ -5105,13 +5236,24 @@ dispatch/<@chrome://marionette/content/listener.js:427:15
 1503471955918	Marionette	DEBUG	Received DOM event "beforeunload" for "http://oatest.bujidele.com:48081/Operation/Car/Index/TDC1012017082337"
 1503471956192	Marionette	DEBUG	Received DOM event "pagehide" for "http://oatest.bujidele.com:48081/Operation/Car/Index/TDC1012017082337"
 1503471956193	Marionette	DEBUG	Received DOM event "unload" for "http://oatest.bujidele.com:48081/Operation/Car/Index/TDC1012017082337"
-1503472012977	geckodriver	INFO	geckodriver 0.18.0
-1503472012989	geckodriver	INFO	Listening on 127.0.0.1:56690
-1503472013533	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args ["-marionette"]
-1503472014389	Marionette	INFO	Enabled via --marionette
-[GPU 14476] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-[Child 14756] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-[Child 14756] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[GPU 15368] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+[GPU 15368] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
 1503472015936	Marionette	INFO	Listening on port 56695
 1503472015951	Marionette	INFO	Listening on port 56695
 1503472015978	Marionette	WARN	TLS certificate errors will be ignored for this session
@@ -5186,12 +5328,23 @@ IPDL protocol error: Handler returned error code!
 ###!!! [Parent][DispatchAsyncMessage] Error: PAPZCTreeManager::Msg_SetTargetAPZC Processing error: message was deserialized, but the handler returned false (indicating failure)
 
 [GPU 14476] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-1503473177334	geckodriver	INFO	geckodriver 0.18.0
-1503473177346	geckodriver	INFO	Listening on 127.0.0.1:57323
-1503473177883	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args ["-marionette"]
-1503473178767	Marionette	INFO	Enabled via --marionette
-[Parent 14960] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-[Child 17280] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+[GPU 14476] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+l-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
 [Child 17280] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
 1503473180433	Marionette	INFO	Listening on port 57327
 1503473180472	Marionette	INFO	Listening on port 57327
@@ -5242,11 +5395,14 @@ IPDL protocol error: Handler returned error code!
 1503473208584	Marionette	DEBUG	Received DOM event "pagehide" for "http://oatest.bujidele.com:48081/Operation/Car/Index/TDC1012017082339"
 1503473208585	Marionette	DEBUG	Received DOM event "unload" for "http://oatest.bujidele.com:48081/Operation/Car/Index/TDC1012017082339"
 1503473210103	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
-1503473233022	geckodriver	INFO	geckodriver 0.18.0
-1503473233036	geckodriver	INFO	Listening on 127.0.0.1:57671
-1503473233565	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args ["-marionette"]
-1503473234420	Marionette	INFO	Enabled via --marionette
-JavaScript error: resource:///modules/ExtensionsUI.jsm, line 50: TypeError: RecentWindow.getMostRecentBrowserWindow(...) is null
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+[GPU 14624] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+rce:///modules/ExtensionsUI.jsm, line 50: TypeError: RecentWindow.getMostRecentBrowserWindow(...) is null
 1503473236031	Marionette	INFO	Listening on port 57675
 1503473236055	Marionette	INFO	Listening on port 57675
 1503473236393	Marionette	WARN	TLS certificate errors will be ignored for this session
@@ -5297,21 +5453,21 @@ JavaScript error: resource:///modules/ExtensionsUI.jsm, line 50: TypeError: Rece
 1503473262647	Marionette	DEBUG	Received DOM event "unload" for "http://oatest.bujidele.com:48081/Operation/Car/Index/TDC1012017082340"
 JavaScript error: http://oatest.bujidele.com:48081/Operation/Manage/Index?carBusinessId=TDC1012017082340&custName=&businessType=ALL, line 748: ReferenceError: layer is not defined
 1503473264001	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
-1503473281506	geckodriver	INFO	geckodriver 0.18.0
-1503473281518	geckodriver	INFO	Listening on 127.0.0.1:58037
-1503473282059	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args ["-marionette"]
-1503473282986	Marionette	INFO	Enabled via --marionette
-JavaScript error: resource:///modules/ExtensionsUI.jsm, line 50: TypeError: RecentWindow.getMostRecentBrowserWindow(...) is null
-[GPU 3216] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-1503473285190	Marionette	INFO	Listening on port 58041
-1503473285204	Marionette	INFO	Listening on port 58041
-1503473285382	Marionette	WARN	TLS certificate errors will be ignored for this session
-1503473285422	Marionette	DEBUG	loaded listener.js
-1503473285453	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
-1503473285497	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
-1503473285497	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
-1503473286424	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
-1503473286822	Marionette	DEBUG	Received DOM event "pageshow" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
+[GPU 14288] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 18736] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 3684] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 3684] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x4400F3,name=PContent::Msg_AccumulateChildHistograms) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x4400F4,name=PContent::Msg_AccumulateChildKeyedHistograms) Channel closing: too late to send/recv, messages will be lost
+
+[GPU 14288] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+t "pageshow" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
 1503473287098	Marionette	DEBUG	Received DOM event "beforeunload" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
 1503473287447	Marionette	DEBUG	Received DOM event "pagehide" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
 1503473287447	Marionette	DEBUG	Received DOM event "unload" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
@@ -5353,46 +5509,60 @@ JavaScript error: resource:///modules/ExtensionsUI.jsm, line 50: TypeError: Rece
 1503473315194	Marionette	DEBUG	Received DOM event "unload" for "http://oatest.bujidele.com:48081/Operation/Car/Index/TDC1012017082341"
 1503473317525	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
 1503473318348	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
-1503473370059	geckodriver	INFO	geckodriver 0.18.0
-1503473370072	geckodriver	INFO	Listening on 127.0.0.1:58399
-1503473370607	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args ["-marionette"]
-1503473371477	Marionette	INFO	Enabled via --marionette
-1503473373088	Marionette	INFO	Listening on port 58403
-1503473373098	Marionette	INFO	Listening on port 58403
-1503473373461	Marionette	WARN	TLS certificate errors will be ignored for this session
-1503473373498	Marionette	DEBUG	loaded listener.js
-1503473373528	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
-1503473373582	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
-1503473373582	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
-1503473374137	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
-1503473374723	Marionette	DEBUG	Received DOM event "pageshow" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
-1503473374960	Marionette	DEBUG	Received DOM event "beforeunload" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
-1503473375311	Marionette	DEBUG	Received DOM event "pagehide" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
-1503473375311	Marionette	DEBUG	Received DOM event "unload" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
-1503473376317	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://oatest.bujidele.com:48081//Admin/Home/Index"
-1503473376532	Marionette	DEBUG	Received DOM event "pageshow" for "http://oatest.bujidele.com:48081//Admin/Home/Index"
-1503473376599	Marionette	DEBUG	Received DOM event "beforeunload" for "http://oatest.bujidele.com:48081//Admin/Home/Index"
-1503473377406	Marionette	DEBUG	Received DOM event "pagehide" for "http://oatest.bujidele.com:48081//Admin/Home/Index"
-1503473377408	Marionette	DEBUG	Received DOM event "unload" for "http://oatest.bujidele.com:48081//Admin/Home/Index"
-1503473378977	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://oatest.bujidele.com:48081/Operation/Manage/Index"
-1503473379250	Marionette	DEBUG	Received DOM event "pageshow" for "http://oatest.bujidele.com:48081/Operation/Manage/Index"
-1503473379454	Marionette	DEBUG	Received DOM event "pagehide" for "http://oatest.bujidele.com:48081/Operation/Manage/Index"
-1503473379539	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
-1503473380081	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
-1503473380698	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
-1503473382543	Marionette	DEBUG	Received DOM event "pagehide" for "http://oatest.bujidele.com:48081/Operation/Manage/Index"
+[GPU 3216] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[GPU 3216] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+WARNING: At least one completion condition is taking too long to complete. Conditions: [{"name":"TelemetryController: shutting down","state":{"initialized":true,"initStarted":true,"haveDelayedInitTask":false,"shutdownBarrier":"Not started","connectionsBarrier":"Not started","sendModule":{"sendingEnabled":false,"pendingPingRequestCount":0,"pendingPingActivityCount":0,"unpersistedPingCount":0,"persistedPingCount":0,"schedulerState":{"shutdown":true,"hasSendTask":false,"sendsFailed":false,"sendTaskState":"bail out - no pings to send","backoffDelay":60000}},"haveDelayedNewProfileTask":false},"filename":"resource://gre/modules/TelemetryController.jsm","lineNumber":758,"stack":["resource://gre/modules/TelemetryController.jsm:setupTelemetry:758","resource://gre/modules/TelemetryController.jsm:observe:867","resource://gre/modules/TelemetryController.jsm:observe:186","jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/TelemetryStartup.js:TelemetryStartup.prototype.observe:29"]}] Barrier: profile-before-change-telemetry
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  CrashService waiting for content crash ping to be sent
+          Phase: profile-before-change
+          State: (none)
+WARNING: Error: OS.File has been shut down. Rejecting request to writeAtomic
+WARNING: post/<@resource://gre/modules/osfile/osfile_async_front.jsm:411:8
+process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+observe@resource://gre/modules/AsyncShutdown.jsm:531:9
+
+JavaScript error: resource://gre/modules/osfile/osfile_async_front.jsm, line 411: Error: OS.File has been shut down. Rejecting request to writeAtomic
+[GPU 3216] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1/Operation/Manage/Index"
 1503473382546	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483658"
 1503473382724	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
-1503473421097	geckodriver	INFO	geckodriver 0.18.0
-1503473421108	geckodriver	INFO	Listening on 127.0.0.1:58556
-1503473421634	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args ["-marionette"]
-1503473422549	Marionette	INFO	Enabled via --marionette
-[GPU 11812] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-[Child 11224] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-[Child 11224] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-1503473424170	Marionette	INFO	Listening on port 58560
-[Child 7356] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-[Child 7356] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[GPU 15328] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[GPU 15328] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 13964] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+[GPU 15328] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+NING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
 1503473424354	Marionette	INFO	Listening on port 58560
 1503473424527	Marionette	WARN	TLS certificate errors will be ignored for this session
 1503473425205	Marionette	DEBUG	loaded listener.js
@@ -5443,11 +5613,12 @@ JavaScript error: resource:///modules/ExtensionsUI.jsm, line 50: TypeError: Rece
 1503473453468	Marionette	DEBUG	Received DOM event "beforeunload" for "http://oatest.bujidele.com:48081/Operation/CarApprove/Approve?carBusinessId=TDC1012017082343&title=%E6%8F%90%E4%BA%A4%E8%BD%A6%E8%BE%86%E8%AF%84%E4%BC%B0&accept_type=Manage&flow_business_type=%E8%BD%A6%E6%98%93%E8%B4%B7"
 1503473454156	Marionette	DEBUG	Received DOM event "pagehide" for "http://oatest.bujidele.com:48081/Operation/CarApprove/Approve?carBusinessId=TDC1012017082343&title=%E6%8F%90%E4%BA%A4%E8%BD%A6%E8%BE%86%E8%AF%84%E4%BC%B0&accept_type=Manage&flow_business_type=%E8%BD%A6%E6%98%93%E8%B4%B7"
 1503473454156	Marionette	DEBUG	Received DOM event "unload" for "http://oatest.bujidele.com:48081/Operation/CarApprove/Approve?carBusinessId=TDC1012017082343&title=%E6%8F%90%E4%BA%A4%E8%BD%A6%E8%BE%86%E8%AF%84%E4%BC%B0&accept_type=Manage&flow_business_type=%E8%BD%A6%E6%98%93%E8%B4%B7"
-1503473477024	geckodriver	INFO	geckodriver 0.18.0
-1503473477036	geckodriver	INFO	Listening on 127.0.0.1:58911
-1503473477569	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args ["-marionette"]
-1503473478508	Marionette	INFO	Enabled via --marionette
-[GPU 2176] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[GPU 11812] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[GPU 11812] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+src/chrome/common/ipc_channel_win.cc, line 346
 [Child 19564] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
 [Child 19564] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
 
@@ -5505,14 +5676,13 @@ JavaScript error: resource:///modules/ExtensionsUI.jsm, line 50: TypeError: Rece
 1503473505799	Marionette	DEBUG	Received DOM event "beforeunload" for "http://oatest.bujidele.com:48081/Operation/CarApprove/Approve?carBusinessId=TDC1012017082344&title=%E6%8F%90%E4%BA%A4%E8%BD%A6%E8%BE%86%E8%AF%84%E4%BC%B0&accept_type=Manage&flow_business_type=%E8%BD%A6%E6%98%93%E8%B4%B7"
 1503473506325	Marionette	DEBUG	Received DOM event "pagehide" for "http://oatest.bujidele.com:48081/Operation/CarApprove/Approve?carBusinessId=TDC1012017082344&title=%E6%8F%90%E4%BA%A4%E8%BD%A6%E8%BE%86%E8%AF%84%E4%BC%B0&accept_type=Manage&flow_business_type=%E8%BD%A6%E6%98%93%E8%B4%B7"
 1503473506325	Marionette	DEBUG	Received DOM event "unload" for "http://oatest.bujidele.com:48081/Operation/CarApprove/Approve?carBusinessId=TDC1012017082344&title=%E6%8F%90%E4%BA%A4%E8%BD%A6%E8%BE%86%E8%AF%84%E4%BC%B0&accept_type=Manage&flow_business_type=%E8%BD%A6%E6%98%93%E8%B4%B7"
-1503473613105	geckodriver	INFO	geckodriver 0.18.0
-1503473613118	geckodriver	INFO	Listening on 127.0.0.1:59300
-1503473613650	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args ["-marionette"]
-1503473614576	Marionette	INFO	Enabled via --marionette
-[GPU 11572] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-1503473616309	Marionette	INFO	Listening on port 59304
-1503473616356	Marionette	INFO	Listening on port 59304
-1503473616442	Marionette	WARN	TLS certificate errors will be ignored for this session
+[GPU 2176] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[GPU 2176] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[GPU 2176] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+473616442	Marionette	WARN	TLS certificate errors will be ignored for this session
 1503473616484	Marionette	DEBUG	loaded listener.js
 1503473616518	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
 1503473616565	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
@@ -5559,15 +5729,13 @@ JavaScript error: resource:///modules/ExtensionsUI.jsm, line 50: TypeError: Rece
 1503473643679	Marionette	DEBUG	Received DOM event "pagehide" for "http://oatest.bujidele.com:48081/Operation/Manage/Index?carBusinessId=TDC1012017082345&custName=&businessType=ALL"
 1503473643693	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
 1503473645156	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
-1503473761864	geckodriver	INFO	geckodriver 0.18.0
-1503473761876	geckodriver	INFO	Listening on 127.0.0.1:59676
-1503473762418	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args ["-marionette"]
-1503473763460	Marionette	INFO	Enabled via --marionette
-1503473765160	Marionette	INFO	Listening on port 59680
-1503473765172	Marionette	INFO	Listening on port 59680
-1503473765309	Marionette	WARN	TLS certificate errors will be ignored for this session
-1503473765349	Marionette	DEBUG	loaded listener.js
-1503473765376	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+[GPU 11572] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 20476] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[GPU 11572] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+d DOM event "beforeunload" for "about:blank"
 1503473765427	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
 1503473765428	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
 1503473766689	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://oatest.bujidele.com:48081//Admin/Account/Login"
@@ -5618,3 +5786,6 @@ JavaScript error: resource:///modules/ExtensionsUI.jsm, line 50: TypeError: Rece
 1503473796134	Marionette	DEBUG	Received DOM event "beforeunload" for "http://oatest.bujidele.com:48081/Operation/CarApprove/Approve?carBusinessId=TDC1012017082346&title=%E6%8F%90%E4%BA%A4%E8%BD%A6%E8%BE%86%E8%AF%84%E4%BC%B0&accept_type=Manage&flow_business_type=%E8%BD%A6%E6%98%93%E8%B4%B7"
 1503473796789	Marionette	DEBUG	Received DOM event "pagehide" for "http://oatest.bujidele.com:48081/Operation/CarApprove/Approve?carBusinessId=TDC1012017082346&title=%E6%8F%90%E4%BA%A4%E8%BD%A6%E8%BE%86%E8%AF%84%E4%BC%B0&accept_type=Manage&flow_business_type=%E8%BD%A6%E6%98%93%E8%B4%B7"
 1503473796790	Marionette	DEBUG	Received DOM event "unload" for "http://oatest.bujidele.com:48081/Operation/CarApprove/Approve?carBusinessId=TDC1012017082346&title=%E6%8F%90%E4%BA%A4%E8%BD%A6%E8%BE%86%E8%AF%84%E4%BC%B0&accept_type=Manage&flow_business_type=%E8%BD%A6%E6%98%93%E8%B4%B7"
+[GPU 20096] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[GPU 20096] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[GPU 20096] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346

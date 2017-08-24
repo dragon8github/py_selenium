@@ -163,7 +163,7 @@ class AddCarBusiness(unittest.TestCase):
             # 设置日志
             self.L.setValueById("log_remark", "同意提交")
             # 点击提交按钮
-            self.L.sleep(2, lambda x: self.driver.find_element_by_id("btnSubmit").click())
+            self.L.sleep(2, lambda x: x.find_element_by_id("btnSubmit").click())
             # 等待alert并且点击确认
             self.L.waitForAlert().accept()
         

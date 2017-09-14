@@ -3,6 +3,9 @@ from selenium.webdriver.support.ui import Select
 from time import sleep
 from Lib import Lib
 import unittest
+import HTMLTestRunner
+import os
+import sys
 
 class AddCarBusiness(unittest.TestCase):
     # 准备环节
@@ -15,6 +18,9 @@ class AddCarBusiness(unittest.TestCase):
 
     # 开始
     def test_start(self):
+
+        self.driver.find_element_by_css_selector
+
         # 登录
         self.L.login("chaijibing", "123456@a")
 
@@ -43,7 +49,7 @@ class AddCarBusiness(unittest.TestCase):
            businessId = 'TD' + success_text.split("TD")[1]
 
            # 执行下一步任务: 编辑车易贷订单信息
-           self.EditCarBusiness_1(businessId)
+           # self.EditCarBusiness_1(businessId)
 
     def EditCarBusiness_1(self, id):
         # 切换回主层面
@@ -77,6 +83,9 @@ class AddCarBusiness(unittest.TestCase):
            self.L.setValueById("multiple_customer_bank_info_bank_account", "62534442511225448")
            self.L.setValueById("multiple_customer_bank_info_phone_number", "15876366685")
            self.L.setValueById("multiple_customer_bank_info_bank_subname", "工商支行")
+           self.L.setValueById("model_tb_car_personal_stay_year", "1")
+           self.L.setValueById("model_tb_car_personal_driver_license_issue_date", "2017-09-14")
+           self.L.setValueById("btn_Zhimascore", "无")
 
            self.L.waitForSelectTextById('model_tb_car_personal_current_sheng', '广东省')
            self.L.waitForSelectTextById('model_tb_car_personal_current_shi', '广州市')
@@ -85,6 +94,10 @@ class AddCarBusiness(unittest.TestCase):
            self.L.waitForSelectTextById('multiple_customer_bank_info_bank_provice', '广东省')
            self.L.waitForSelectTextById('multiple_customer_bank_info_bank_city', '中山市')
            self.L.waitForSelectTextById('multiple_customer_bank_info_output_type', '对私')
+           self.L.waitForSelectTextById('model_tb_car_job_industry_category', '教育')
+           self.L.waitForSelectTextById('model_tb_car_job_payroll_form', '现金')
+           self.L.waitForSelectTextById('model_tb_car_job_company_property', '其他')
+
 
         # 保存表单
         self.driver.find_element_by_id('saveRow').click()
@@ -172,4 +185,9 @@ class AddCarBusiness(unittest.TestCase):
         # self.driver.quit()
 
 if __name__ == "__main__":
-    unittest.main()
+    # unittest.main()
+    testsuite = unittest.TestSuite()
+    testsuite.addTest(AddCarBusiness("test_start"))
+    fp = open('my_report.html', 'wb')
+    runner = HTMLTestRunner.HTMLTestRunner(stream=fp, title='title', description='description')
+    runner.run(testsuite);

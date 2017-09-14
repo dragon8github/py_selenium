@@ -1,0 +1,21 @@
+{
+  "name": "py",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"git": "git add . && git commit -m 123 && git push -u origin master"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dragon8github/py_selenium.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dragon8github/py_selenium/issues"
+  },
+  "homepage": "https://github.com/dragon8github/py_selenium#readme"
+}
